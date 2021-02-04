@@ -1,1 +1,22 @@
-<p>blog-main-page works!</p>
+<mat-toolbar style="background-color:#004365; color:white; padding-left: 46px;">
+  Blog Page
+</mat-toolbar>
+<div class="content">
+<div fxLayout="row wrap" fxLayoutGap="16px grid">
+  <div fxFlex="25%" *ngFor="let num of items">
+    <mat-card [routerLink]="['../blog-post/' + num.title]" (click)="gotoBlog(num.title)" class="mat-elevation-z4" >
+    <img mat-card-image src='{{num.src}}' alt="Photo of a Shiba Inu">
+  <mat-card-content>
+  <mat-card-title>
+  '{{num.title}}'
+  </mat-card-title>
+    <p style="color:grey; text-align: right">
+      22/01
+    </p>
+  </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+</div>
+
+<h1>{{size}}</h1>
