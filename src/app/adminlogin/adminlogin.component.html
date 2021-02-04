@@ -1,0 +1,20 @@
+<div *ngIf="isAdmin;else login">
+  <p>Hello</p>
+</div>
+<ng-template #login>
+  <mat-card class="logincard">
+    <form class="example-form" (submit)="logAdmin($event)">
+      <p class="title">Welcome on the admin login page</p>
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email" name="email" type="text" [(ngModel)]="AdminCred.email" />
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Password</mat-label>
+      <input matInput placeholder="Password" type="password" name="password" [(ngModel)]="AdminCred.password" />
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Login</button>
+  </form>
+</mat-card>
+</ng-template>

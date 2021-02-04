@@ -1,0 +1,18 @@
+.logincard {
+  width: 40%;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+form mat-form-field {
+  width: 100%;
+}
+
+.title {
+  font-size: 20px;
+}
