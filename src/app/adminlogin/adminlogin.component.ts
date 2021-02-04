@@ -13,6 +13,7 @@ export class AdminloginComponent implements OnInit {
 
   public AdminCred = new AdminModel()
   public isAdmin : boolean = false;
+  public loginFailed : boolean = false
 
   constructor( private AdminService : AdminService) { }
 
@@ -24,7 +25,10 @@ export class AdminloginComponent implements OnInit {
     this.AdminService.getAdminCredentials().subscribe((element) => {
       if (this.AdminCred.email === element.email && sha(this.AdminCred.password) === element.password) {
         this.isAdmin = true
+        this.loginFailed = false
         console.log("Admin")
+      } else {
+        this.loginFailed = true
       }
     })
   }

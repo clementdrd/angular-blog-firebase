@@ -5,6 +5,9 @@
   <mat-card class="logincard">
     <form class="example-form" (submit)="logAdmin($event)">
       <p class="title">Welcome on the admin login page</p>
+      <span *ngIf="loginFailed">
+        <p>Unsuccessfull Login</p>
+      </span>
     <mat-form-field class="example-full-width">
       <mat-label>Email</mat-label>
       <input matInput placeholder="Email" name="email" type="text" [(ngModel)]="AdminCred.email" />
