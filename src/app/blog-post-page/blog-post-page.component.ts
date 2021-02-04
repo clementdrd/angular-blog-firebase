@@ -1,3 +1,4 @@
+import { element } from 'protractor';
 import { Component, OnInit } from '@angular/core';
 
 interface obj {
@@ -16,6 +17,9 @@ export class BlogPostPageComponent implements OnInit {
 
   public url:string = window.location.href;
   public title:string = "";
+  public writer:string = "";
+  public day:string = "";
+  public img:string = "";
   public items: obj[] = [
     {
       title: 'Werewolf The Apocalypse : Un loup-garou tombé au champ de bataille',
@@ -148,6 +152,17 @@ export class BlogPostPageComponent implements OnInit {
   ngOnInit(): void {
 
     this.title = this.url.split('post/')[1].split('%20').join(' ').split('%C3%A9').join('é').split('%09&apos%3B').join("'")
+    this.items.forEach(element => {
+      if(this.title === element.title) {
+        this.img = element.src
+        this.day = element.date
+        this.writer = element.author
+      }
+      else{
+        console.log('not good')
+      }
+    });
+
 
   }
 

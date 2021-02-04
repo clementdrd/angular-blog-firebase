@@ -4,13 +4,13 @@
 <div class="content">
 <div fxLayout="row wrap" fxLayoutGap="16px grid">
   <div fxFlex="25%" *ngFor="let num of items">
-    <mat-card [routerLink]="['../blog-post/' + num.title]" (click)="gotoBlog(num.title)" class="mat-elevation-z4" >
+    <mat-card style="height:310px"[routerLink]="['../blog-post/' + num.title]" (click)="gotoBlog(num.title)" class="mat-elevation-z4" >
     <img mat-card-image src='{{num.src}}' alt="Photo of a Shiba Inu">
   <mat-card-content>
-  <mat-card-title>
+  <mat-card-title id="test">
   '{{num.title}}'
   </mat-card-title>
-    <p style="color:grey; text-align: right">
+    <p style="color:grey; text-align: right; padding-bottom:30px">
       22/01
     </p>
   </mat-card-content>

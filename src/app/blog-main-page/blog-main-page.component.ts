@@ -16,6 +16,7 @@ interface obj {
 export class BlogMainPageComponent implements OnInit {
 
   public size:number = 10;
+  public titi:string = "";
   public items: obj[] = [
     {
       title: 'Werewolf The Apocalypse : Un loup-garou tombé au champ de bataille',
@@ -140,6 +141,7 @@ export class BlogMainPageComponent implements OnInit {
   ];
 
   constructor() {
+
    }
 
   ngOnInit(): void {
