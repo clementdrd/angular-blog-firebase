@@ -19,7 +19,7 @@ export class BlogMainPageComponent implements OnInit {
   public titi:string = "";
   public items: obj[] = [
     {
-      title: 'Werewolf The Apocalypse : Un loup-garou tombé au champ de bataille',
+      title: "Werewolf The Apocalypse : Un loup-garou tombé au champ de bataille",
       src: 'https://image.jeuxvideo.com/medias-sm/161191/1611914912-5985-card.jpg',
       date: 'Charizard',
       author: 'toto',
