@@ -13,13 +13,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
     BlogMainPageComponent,
     BlogPostPageComponent,
     HomePageComponent,
-    UnknownPageComponent
+    UnknownPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatButtonModule,
     FlexLayoutModule,
     MatToolbarModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
