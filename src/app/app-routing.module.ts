@@ -7,8 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AdminloginComponent } from './admin/adminlogin/adminlogin.component';
 
 const routes: Routes = [
-  { path : "admin", component : AdminloginComponent }
-
+  { path : "admin", component : AdminloginComponent },
   { path: 'blog-page', component: BlogMainPageComponent },
   { path: 'blog-post/:id', component: BlogPostPageComponent },
   { path: '', component: HomePageComponent},

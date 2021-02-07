@@ -22,8 +22,6 @@ import { BlogMainPageComponent } from './blog-main-page/blog-main-page.component
 import { BlogPostPageComponent } from './blog-post-page/blog-post-page.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { UnknownPageComponent } from './unknown-page/unknown-page.component';
-import { MatCardModule } from '@angular/material/card';
-import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
@@ -53,7 +51,8 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     MatButtonModule,
     MatCardModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatToolbarModule
   ],
   providers: [
     AdminService,
