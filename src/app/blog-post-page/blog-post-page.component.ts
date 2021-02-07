@@ -151,7 +151,7 @@ export class BlogPostPageComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.title = this.url.split('post/')[1].split('%20').join(' ').split('%C3%A9').join('é').split('%09&apos%3B').join("'")
+    this.title = this.url.split('post/')[1].split('%20').join(' ').split('%C3%A9').join('é').split('%09&apos%3B').join("'").split('%C3%A8').join('è')
     this.items.forEach(element => {
       if(this.title === element.title) {
         this.img = element.src

@@ -1,6 +1,7 @@
 
 .content {
-  padding: 126px;
+  padding: 136px;
+  padding-left: 10%;
 }
 
 .content > mat-card {
