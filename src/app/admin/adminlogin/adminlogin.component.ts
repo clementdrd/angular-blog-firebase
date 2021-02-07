@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import * as sha from "sha256"
 
-import { AdminModel } from '../models/admin.model';
-import { AdminService } from '../services/admin.service';
+import { AdminModel } from '../../models/admin.model';
+import { AdminService } from '../../services/admin.service';
 
 @Component({
   selector: 'app-adminlogin',
@@ -12,7 +12,7 @@ import { AdminService } from '../services/admin.service';
 export class AdminloginComponent implements OnInit {
 
   public AdminCred = new AdminModel()
-  public isAdmin : boolean = false;
+  public isAdmin : boolean = true;
   public loginFailed : boolean = false
 
   constructor( private AdminService : AdminService) { }

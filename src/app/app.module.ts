@@ -12,12 +12,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AdminService } from "./services/admin.service";
-import { AdminloginComponent } from './adminlogin/adminlogin.component'
+import { AdminloginComponent } from './admin/adminlogin/adminlogin.component';
+import { AdminNavbarComponent } from './admin/admin-navbar/admin-navbar.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import { AdminCreatePostComponent } from './admin/admin-create-post/admin-create-post.component';
+import { AdminDisplayPostComponent } from './admin/admin-display-post/admin-display-post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminloginComponent,
+    AdminNavbarComponent,
+    AdminCreatePostComponent,
+    AdminDisplayPostComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +37,8 @@ import { AdminloginComponent } from './adminlogin/adminlogin.component'
     MatInputModule,
     MatButtonModule,
     MatCardModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [
     AdminService,

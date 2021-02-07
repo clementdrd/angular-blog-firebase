@@ -1,5 +1,5 @@
 <div *ngIf="isAdmin;else login">
-  <p>Hello</p>
+  <app-admin-navbar></app-admin-navbar>
 </div>
 <ng-template #login>
   <mat-card class="logincard">

@@ -1,0 +1,19 @@
+.sidenav {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid #555;
+}
+
+.drawer {
+  width: 17%;
+}
+
+.navlist {
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+}
+
+.navlist button {
+  margin: 10px 0;
+}
