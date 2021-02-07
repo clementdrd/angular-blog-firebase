@@ -3,16 +3,16 @@
 </mat-toolbar>
 <div class="content">
 <div fxLayout="row wrap" fxLayoutGap="16px grid">
-  <div fxFlex="25%" style="height:40%; width: 45%; display: inline-block; margin: 20px;" *ngFor="let num of items">
+  <div fxFlex="25%" style="height:40%; width: 30%; display: inline-block; margin: 20px;" *ngFor="let num of items">
     <mat-card [routerLink]="['../blog-post/' + num.title]" (click)="gotoBlog(num.title)" class="mat-elevation-z4" >
     <img mat-card-image style="height:60%" src='{{num.src}}' alt="Photo of a Shiba Inu">
   <mat-card-content>
   <mat-card-title style="height: 40%" id="test">
   {{num.title}}
   </mat-card-title>
-    <!-- <p style="position: relative; color:grey; text-align: right;">
+    <p style="position: relative; color:grey; text-align: right;">
       22/01
-    </p> -->
+    </p>
   </mat-card-content>
     </mat-card>
   </div>
