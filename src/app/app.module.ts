@@ -18,6 +18,17 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { AdminCreatePostComponent } from './admin/admin-create-post/admin-create-post.component';
 import { AdminDisplayPostComponent } from './admin/admin-display-post/admin-display-post.component';
+import { BlogMainPageComponent } from './blog-main-page/blog-main-page.component';
+import { BlogPostPageComponent } from './blog-post-page/blog-post-page.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { UnknownPageComponent } from './unknown-page/unknown-page.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+
+
 
 @NgModule({
   declarations: [
@@ -26,6 +37,10 @@ import { AdminDisplayPostComponent } from './admin/admin-display-post/admin-disp
     AdminNavbarComponent,
     AdminCreatePostComponent,
     AdminDisplayPostComponent,
+    BlogMainPageComponent,
+    BlogPostPageComponent,
+    HomePageComponent,
+    UnknownPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,6 +57,12 @@ import { AdminDisplayPostComponent } from './admin/admin-display-post/admin-disp
   ],
   providers: [
     AdminService,
+    MatCardModule,
+    MatButtonModule,
+    FlexLayoutModule,
+    MatToolbarModule,
+    IvyCarouselModule,
+
   ],
   bootstrap: [AppComponent]
 })

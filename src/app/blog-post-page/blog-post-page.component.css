@@ -1,0 +1,24 @@
+
+.content {
+  padding: 226px;
+}
+
+.content > mat-card {
+  width: 1780px;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.example-header-image {
+  margin-bottom:30px;
+  background-image: url('https://assets.codepen.io/406785/gc.png');
+  background-size: cover;
+}
+
+.infos{
+  display: flex;
+  align-items: center;
+}
+
