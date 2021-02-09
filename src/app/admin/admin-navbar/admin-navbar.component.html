@@ -1,12 +1,12 @@
 <mat-drawer-container class="sidenav">
   <mat-drawer mode="side" class="drawer" opened>
     <mat-action-list class="navlist">
-      <button mat-list-item (click)="setView('create')"> Create post </button>
       <button mat-list-item (click)="setView('display')"> View posts </button>
+      <button mat-list-item (click)="setView('create')"> Create post </button>
     </mat-action-list>
   </mat-drawer>
   <mat-drawer-content>
-    <app-admin-create-post *ngIf="this.view === 'create'"></app-admin-create-post>
     <app-admin-display-post *ngIf="this.view === 'display'"></app-admin-display-post>
+    <app-admin-create-post *ngIf="this.view === 'create'"></app-admin-create-post>
   </mat-drawer-content>
 </mat-drawer-container>

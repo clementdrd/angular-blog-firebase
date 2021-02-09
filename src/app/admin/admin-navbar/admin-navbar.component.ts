@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminNavbarComponent implements OnInit {
 
-  public view : string = "";
+  public view : string = "display";
 
   constructor() { }
 

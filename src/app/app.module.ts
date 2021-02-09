@@ -25,6 +25,7 @@ import { UnknownPageComponent } from './unknown-page/unknown-page.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import {IvyCarouselModule} from 'angular-responsive-carousel';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 
 
@@ -39,6 +40,7 @@ import {IvyCarouselModule} from 'angular-responsive-carousel';
     BlogPostPageComponent,
     HomePageComponent,
     UnknownPageComponent,
+    ToolbarComponent,
   ],
   imports: [
     BrowserModule,
